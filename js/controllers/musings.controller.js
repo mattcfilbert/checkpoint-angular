@@ -19,11 +19,11 @@ function MusingsControllerFunction (musings) {
 
   this.removeMusing = removeMusing
 
-  function createMusing () {
-    musings.create(this.newMusing)
+  function createMusing (title, content, author) {
+    musings.create(this.newMusing.title, this.newMusing.content, this.newMusing.author)
   }
 
-  function removeMusing () {
-    musings.remove
+  function removeMusing (index) {
+    musings.remove(index)
   }
 }
