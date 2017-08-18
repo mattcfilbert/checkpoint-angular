@@ -19,7 +19,7 @@ function MusingsControllerFunction (musings) {
 
   this.removeMusing = removeMusing
 
-  function createMusing (title, content, author) {
+  function createMusing () {
     musings.create(this.newMusing.title, this.newMusing.content, this.newMusing.author)
   }
 
